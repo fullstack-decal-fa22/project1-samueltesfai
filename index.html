@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>My Portfolio</title>
+    
+
+
+    <script>
+        function output_message() {
+            event.preventDefault()
+            var name=document.getElementById("name").value;
+          
+            if (name.trim().length){
+                document.getElementById('message').innerHTML = "Thanks for visiting my website " + name + "!";
+           }
+           else{
+
+            document.getElementById('message').innerHTML="";
+
+           }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="top-half">
+
+
+        <div class="Intro">
+            <h1 style="padding-top: 80px;">Samuel Tesfai</h1>
+            <h2>Student at UC Berkeley studying</h2>
+            <h2> Computer and Data Science</h2>
+            <br>
+            <h2>Contact:</h2>
+            <h3>samuel.tesfai@berkeley.edu</h3>
+            <h3>1-(619)-315-4899</h3>
+            <button>
+                <a class="link" href="https://www.linkedin.com/in/samuel-tesfai-940b72197/" target="_blank"
+                    rel="noopener noreferrer">
+                    Connect with me on LinkedIn!
+                </a>
+            </button>
+        </div>
+
+        <div class="top-rectangle"></div>
+        <img id="headshot"  src="headshot.png" alt="">
+
+        
+
+    </div>
+
+
+
+    <div class="bottom-half">
+
+        <h3 class="header"><u>
+                About Me
+            </u></h3>
+
+
+        <p class="about">
+            About
+            Currently pursuing a bachelors and studying data and computer science at UC Berkeley. I'm also committed
+            to
+            supporting my underrepresented community. Currently eager to find any SWE or data science positions.
+        </p>
+
+
+
+
+        <h3>
+            <u>Work</u>
+        </h3>
+
+        <div class="work-grid">
+            <label style="color: white;">Company</label>
+            <label style="color: white;">Description</label>
+
+            <div class="work name">
+                <h4>Esurgi</h4>
+                <h5>ML Software Engineer Intern</h5>
+            </div>
+            <div class="work description">
+                <p>Currently, my team is tasked with researching and developing an ML model that can predict early signs
+                    of Alzheimer's disease by detecting abnormal speech patterns from the audio data of patients.
+                    Working on feature extraction and developing a neural network using audio analysis packages and
+                    PyTorch.</p>
+            </div>
+
+            <div class="work name">
+                <h4>EDGE In TechTM Initiative at UC</h4>
+                <h5>Data Analyst</h5>
+            </div>
+            <div class="work description">
+                <p>This role saw me on a research team whose goal was to provide valuable insights and suggestions on
+                    promoting equity and inclusion for underrepresented students in UC Berkeley's College of Engineering
+                    grad program. The team spent the semester analyzing graduate student data and speaking with key
+                    faculty members in the College of Engineering to better understand the graduate student experience.
+                    At the end of the semester, my team gave a presentation, which included data visualizations the team
+                    created, to the dean and other notable faculty members that summarized our key findings and policy
+                    suggestions.</p>
+            </div>
+
+            <div class="work name">
+                <h4>Genius Mesh</h4>
+                <h5>Software Engineer Intern</h5>
+            </div>
+            <div class="work description">
+                <p>GeniusMesh is a networking platform for job seekers and employers who graduated from an EMBA program.
+                    I worked alongside a team to complete tasks that improved their site. My biggest contribution during
+                    the internship was addressing the bugs and improving the code for the company's faceted search
+                    interface, which allowed employers to search through a catalog of job seekers on the network.</p>
+            </div>
+
+
+
+
+        </div>
+
+        <h6> By the way, what's your name? </h6>
+
+        <form>
+            <label style="color: white;">Name:</label>
+            <input id="name" type="text">
+            <br>
+            <br>
+            <input onclick="output_message()" id="btn" type="submit">
+        </form>
+
+        <p id='message' class="message"> </p>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
