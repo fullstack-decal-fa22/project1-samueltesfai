@@ -5,22 +5,23 @@
     <link rel="stylesheet" href="styles.css">
 
     <title>My Portfolio</title>
-    
+    <meta name="author" content="Samuel Tesfai">
+
 
 
     <script>
         function output_message() {
             event.preventDefault()
-            var name=document.getElementById("name").value;
-          
-            if (name.trim().length){
+            var name = document.getElementById("name").value;
+
+            if (name.trim().length) {
                 document.getElementById('message').innerHTML = "Thanks for visiting my website " + name + "!";
-           }
-           else{
+            }
+            else {
 
-            document.getElementById('message').innerHTML="";
+                document.getElementById('message').innerHTML = "";
 
-           }
+            }
         }
 
 
@@ -50,9 +51,9 @@
         </div>
 
         <div class="top-rectangle"></div>
-        <img id="headshot"  src="headshot.png" alt="">
+        <img id="headshot" src="headshot.png" alt="">
 
-        
+
 
     </div>
 
